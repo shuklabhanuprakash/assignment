@@ -1,6 +1,6 @@
-var app = angular.module('assignment', [ 'ui.router' ])
+var app = angular.module('assignment', [ 'ui.router','ui.bootstrap','ng-fusioncharts' ]);
 
-.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/login');
 	$stateProvider.state('home', {

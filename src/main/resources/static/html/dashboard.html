@@ -1,7 +1,31 @@
-<div class="tab tab1">
-	<p>Caerphilly fromage cheeseburger. Goat fromage frais halloumi
-		melted cheese cheese and biscuits macaroni cheese babybel ricotta.
-		Roquefort croque monsieur babybel fromage frais chalk and cheese
-		bavarian bergkase cream cheese emmental. When the cheese comes out
-		everybody\'s happy camembert de normandie fromage frais ricotta.</p>
+
+
+<div class='row' ng-controller="DashboardController" ng-init="init()">
+
+<div class='row'>
+
+  <my-elem > </my-elem>
+</div>
+
+<div class='row'>
+ <div class='col-md-6' fusioncharts
+       width="600"
+       height="400"
+       type="column2d"
+       dataSource="{{myDataSource}}" >
+    </div>
+
+<div class='col-md-6' fusioncharts 
+    width="600" 
+    height="400"
+    type="pie3d"
+    datasource="{{myDataSource2}}"
+></div>
+
+</div>
+
+
+
+
+
 </div>

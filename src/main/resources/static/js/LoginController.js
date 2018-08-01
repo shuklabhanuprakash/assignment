@@ -1,4 +1,4 @@
-
+var app = angular.module('assignment');
 app.controller('LoginController',
   function($rootScope, $scope, $http, $location,$state) {
  
