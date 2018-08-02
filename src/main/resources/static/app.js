@@ -1,4 +1,5 @@
-var app = angular.module('assignment', [ 'ui.router','ui.bootstrap','ng-fusioncharts' ]);
+var app = angular.module('assignment', [ 'ui.router', 'ui.bootstrap',
+		'ng-fusioncharts' ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -22,4 +23,34 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		}
 	})
 
-})
+});
+
+
+
+app.factory('dataFactory', function($http, $q) {
+	return {
+		data : function(method, url, data) {
+
+			var deferred = $q.defer();
+			var req = {
+				method : method,
+				url : url,
+				headers : {
+					'Content-Type' :'application/json'
+				},
+				data : data
+			}
+
+			$http(req).then(function(response) {
+				console.log(response.data);
+				deferred.resolve(response.data);
+			}, function() {
+				deferred.reject(response.data);
+
+			});
+			return deferred.promise;
+		}
+
+	}
+});
+

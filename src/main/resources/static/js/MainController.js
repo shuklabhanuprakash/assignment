@@ -6,6 +6,8 @@ app.controller('MainController',
 	
 	
 	$scope.init = function(){
+		
+		$state.go("home.dashboard");
 	console.log("1")
 	}
 	

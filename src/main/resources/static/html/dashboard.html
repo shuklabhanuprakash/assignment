@@ -2,27 +2,26 @@
 
 <div class='row' ng-controller="DashboardController" ng-init="init()">
 
-<div class='row'>
 
-  <my-elem > </my-elem>
-</div>
 
-<div class='row'>
- <div class='col-md-6' fusioncharts
-       width="600"
-       height="400"
-       type="column2d"
-       dataSource="{{myDataSource}}" >
-    </div>
+	<div class='row'>
+		<div class='col-md-6'>
+			<my-elem> </my-elem>
+		</div>
+		
+		<div class='col-md-6'>
+			<my-map> </my-map>
+		</div>
+	</div>
 
-<div class='col-md-6' fusioncharts 
-    width="600" 
-    height="400"
-    type="pie3d"
-    datasource="{{myDataSource2}}"
-></div>
+	<div class='row'>
+		<div class='col-md-6' fusioncharts width="600" height="400"
+			type="column2d" dataSource="{{myDataSource}}"></div>
 
-</div>
+		<div class='col-md-6' fusioncharts width="600" height="400"
+			type="pie3d" datasource="{{myDataSource2}}"></div>
+
+	</div>
 
 
 

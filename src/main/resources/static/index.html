@@ -26,9 +26,16 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js"></script>
 <script
 	src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <script src="https://www.amcharts.com/lib/3/serial.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
 <script src="app.js"></script>
 
 <script src="js/angular-fusioncharts.min.js"></script>
@@ -39,11 +46,12 @@
 <body ng-app="assignment" ng-controller="LoginController">
 
 	<div ui-view></div>
-      
-	
+
+
 	<script src="js/MainController.js"></script>
-	
+
 	<script src="js/DashboardController.js"></script>
 	<script src="js/directive.js"></script>
+	<script src="js/mapDirective.js"></script>
 </body>
 </html>
