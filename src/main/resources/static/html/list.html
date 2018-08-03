@@ -1,0 +1,53 @@
+<div class="container" ng-controller="ListController"
+	ng-init="init()">
+
+	<table st-table="list" st-safe-src="restaurantList" class="table">
+		<thead>
+			<tr>
+				<th colspan="3"><input st-search="" class="form-control"
+					placeholder="Search Here" type="text" /></th>
+				<th colspan="5"></th>
+				<th colspan="3">
+					<div class="pull-right">
+						<label> Records Per Page</label> <input class="form-control"
+							placeholder="" type="text" ng-model="itemsByPage" />
+					</div>
+				</th>
+
+			</tr>
+			<tr>
+				<th st-sort="id" >#</th>
+				<th st-sort="name" >Name</th>
+				<th st-sort="address" >Address</th>
+				<th st-sort="type" >FoodType</th>
+				<th st-sort="post_code" >Post code</th>
+				<th st-sort ="out_code" >Out code</th>
+				<th st-sort colspan="4"="url">URL</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="item in list track by $index">
+				<td class="table-id">{{$index+1}}</td>
+				<td>{{item.name}}</td>
+				<td>{{item.address}}</td>
+				<td>{{item.type_of_food}}</td>
+				<td>{{item.postcode}}</td>
+				<td>{{item.outcode}}</td>
+				<td><a target="_blank" ng-href="{{item.URL}}">{{item.URL}}</a></td>
+
+				<!-- <td>{{item.firstName}}</td>
+      <td>{{item.lastName}}</td>
+      <td>{{item.username}}</td>
+      <td><a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a></td>
+      <td>{{item.age}}</td> -->
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="6" class="text-center">
+					<div st-pagination="" st-items-by-page="itemsByPage"></div>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+</div>

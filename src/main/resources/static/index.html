@@ -17,8 +17,8 @@
 <!-- JS (load angular, ui-router, and our custom js file) -->
 <!-- <script src="js/fusioncharts.min.js"></script> -->
 
-<script src="js/fusioncharts.js"></script>
-<script src="js/fusioncharts.charts.js"></script>
+<script src="js/lib/fusioncharts.js"></script>
+<script src="js/lib/fusioncharts.charts.js"></script>
 <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
@@ -34,12 +34,13 @@
 <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 <script src="https://www.amcharts.com/lib/3/serial.js"></script>
 <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-smart-table/2.1.11/smart-table.min.js"></script>
 
 
 <script src="app.js"></script>
 
-<script src="js/angular-fusioncharts.min.js"></script>
-<script src="js/LoginController.js"></script>
+<script src="js/lib/angular-fusioncharts.min.js"></script>
+<script src="js/controller/LoginController.js"></script>
 </head>
 
 <!-- apply our angular app to our site -->
@@ -48,10 +49,11 @@
 	<div ui-view></div>
 
 
-	<script src="js/MainController.js"></script>
+	<script src="js/controller/MainController.js"></script>
 
-	<script src="js/DashboardController.js"></script>
-	<script src="js/directive.js"></script>
-	<script src="js/mapDirective.js"></script>
+	<script src="js/controller/DashboardController.js"></script>
+	<script src="js/controller/ListController.js"></script>
+	<script src="js/directive/directive.js"></script>
+	<script src="js/directive/mapDirective.js"></script>
 </body>
 </html>
