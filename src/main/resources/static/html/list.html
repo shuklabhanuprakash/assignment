@@ -1,6 +1,5 @@
-<div class="container" ng-controller="ListController"
-	ng-init="init()">
-
+<div class="container" ng-controller="ListController" ng-init="init()">
+	<h3>Employee List</h3>
 	<table st-table="list" st-safe-src="restaurantList" class="table">
 		<thead>
 			<tr>
@@ -16,12 +15,12 @@
 
 			</tr>
 			<tr>
-				<th st-sort="id" >#</th>
-				<th st-sort="name" >Name</th>
-				<th st-sort="address" >Address</th>
-				<th st-sort="type" >FoodType</th>
-				<th st-sort="post_code" >Post code</th>
-				<th st-sort ="out_code" >Out code</th>
+				<th st-sort="id">#</th>
+				<th st-sort="name">Name</th>
+				<th st-sort="address">Address</th>
+				<th st-sort="type">FoodType</th>
+				<th st-sort="post_code">Post code</th>
+				<th st-sort="out_code">Out code</th>
 				<th st-sort colspan="4"="url">URL</th>
 			</tr>
 		</thead>
